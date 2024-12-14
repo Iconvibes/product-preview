@@ -1,0 +1,139 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "fraunces", "poppins", "san-serif";
+}
+:root {
+  --Dark-cyan: hsl(158, 36%, 37%);
+  --Cream: hsl(30, 38%, 92%);
+  --Very-dark-blue: hsl(212, 21%, 14%);
+  --Dark-grayish-blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+}
+body{
+    background: var(--Cream);
+}
+.container{
+    background: var(--White);
+    margin: 1em auto;
+    width: 95%;
+    border-radius: 15px;
+    /* padding: 10px; */
+    display: flex;
+    flex-direction: column;
+}
+#desktop{
+    display: none;
+}
+.container img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: .5rem;
+    width: 100%;
+}
+.container div{
+    padding: 5px 18px;
+}
+p{
+    color: var(--Dark-grayish-blue);
+    letter-spacing: 3.3px;
+    font-family: sans-serif;
+}
+h1{
+    font-weight: bold;
+    color: var(--Very-dark-blue);
+    font-size: 2.21rem;
+    line-height: 2.3rem;
+    margin: .5rem 0;
+}
+#about{
+    color: var(--Dark-grayish-blue);
+    width: 99%;
+    text-align: left;
+    letter-spacing: .6px;
+    font-weight: 500;
+    line-height: 1.45rem;
+    margin: 1rem 0;
+}
+#price{
+    color: var(--Dark-cyan);
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    /* justify-content: center; */
+}
+#price span{
+    color: var(--Dark-grayish-blue);
+    font-size: .9rem;
+    /* font-weight: 500; */
+}
+button{
+    display: flex;
+    background: var(--Dark-cyan);
+    justify-content: center;
+    gap: 1rem;
+    color: var(--White);
+    width: 100%;
+    padding: .5rem 1rem;
+    margin: .5rem 0;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+button img{
+    max-width: fit-content;
+}
+@media (min-width:600px){
+    .container{
+        flex-direction: row;
+        width: 85%;
+        margin: 3em auto;
+    }
+    #mobile{
+        display: hidden;
+    }
+    .container img{
+        border-top-right-radius: 0;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        width: 50%;
+        margin-bottom: 0;
+    }
+    button{
+        margin: .5rem 0 0 0;
+        gap: .5rem;
+        padding: .5rem 0;
+    }
+    button:hover{
+        background: hsl(157, 37%, 22%);
+        transition: 1s;
+    }
+    button img{
+        max-width: fit-content;
+    }
+
+}
+@media (min-width:800px){
+    .container{
+        width: 70%;
+    }
+}
+@media (min-width:970px){
+    .container{
+        width: 60%;
+    }
+}
+@media (min-width:1130px){
+    .container{
+        width: 50%;
+    }
+}
+@media (min-width:1360px){
+    .container{
+        width: 40%;
+    }
+}
